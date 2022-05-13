@@ -1,0 +1,6 @@
+<button (click)="updateUser()">Update user</button>
+
+<section *ngIf="user$ | appAsync as user">
+  <p>{{user.firstName}}</p>
+  <p>{{user.lastName}}</p>
+</section>
